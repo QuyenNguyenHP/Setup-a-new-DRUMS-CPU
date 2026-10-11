@@ -1,0 +1,17 @@
+[Unit]
+Description=Encrypt_Zip_Files
+
+[Service]
+Type=simple
+User=drums
+Group=drums
+WorkingDirectory=/home/drums
+Environment=HOME=/home/drums
+Environment=GNUPGHOME=/home/drums/.gnupg
+ExecStart=/usr/bin/python3 -u /home/drums/scripts/encrypt01.py
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target

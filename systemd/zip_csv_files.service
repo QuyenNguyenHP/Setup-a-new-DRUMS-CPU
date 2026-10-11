@@ -1,0 +1,16 @@
+[Unit]
+Description=Zip CSV Files Service
+
+[Service]
+Type=simple
+User=drums
+Group=drums
+WorkingDirectory=/home/drums
+Environment=HOME=/home/drums
+ExecStart=/usr/bin/python3 -u /home/drums/scripts/zip01.py
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target

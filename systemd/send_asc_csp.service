@@ -1,0 +1,18 @@
+[Unit]
+Description=Send ASC Files Service
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=drums
+Group=drums
+WorkingDirectory=/home/drums
+Environment=HOME=/home/drums
+ExecStart=/usr/bin/python3 -u /home/drums/scripts/send_asc_scp_v5.py
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target
