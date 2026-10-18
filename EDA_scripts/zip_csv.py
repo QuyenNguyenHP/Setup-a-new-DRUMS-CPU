@@ -22,7 +22,7 @@ def zip_and_delete_csv_files():
     # Generate the timestamp
     timestamp = datetime.now().strftime("%m-%d-%Y-%H-%M-%S")
     # Define the full path for the zip file
-    zip_filename = os.path.join(zip_dir, f'db66_01-{timestamp}.zip')
+    zip_filename = os.path.join(zip_dir, f'EDA_NK-{timestamp}.zip')
 
     # Find all CSV files in the csv_dir
     csv_files = [f for f in os.listdir(csv_dir) if f.endswith('.csv')]

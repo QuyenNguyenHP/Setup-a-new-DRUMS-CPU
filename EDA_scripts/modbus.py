@@ -34,7 +34,7 @@ async def read_modbus_data(DG, slave_id, dg_name, imo, serial):
     try:
 
         dt = datetime.datetime.now()
-        logfile = f"/home/drums/csv/MODdongbac4502_{dg_name.replace('#','')}-{dt:%Y-%m-%d-%H-%M}.csv"
+        logfile = f"/home/drums/csv/EDA_NK_{dg_name.replace('#','')}-{dt:%Y-%m-%d-%H-%M}.csv"
 
         with open(logfile, "a", newline="") as f:
             writer = csv.writer(f)

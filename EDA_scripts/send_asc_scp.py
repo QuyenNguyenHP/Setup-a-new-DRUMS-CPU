@@ -53,7 +53,7 @@ if __name__ == "__main__":
     directory_to_monitor = "/home/drums/asc/"
     remote_server_paths = [
         #"devdb@dsing.softether.net:/home/devdb/incoming/",
-        "opc@213.35.123.66:/input/H429"
+        "opc@129.150.37.135:/input/EDA_NK"
     ]
     ports = [None]  # Specify ports corresponding to each remote path, None for default port
     check_interval = 60  # Check for unsent files every 60 seconds

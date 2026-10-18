@@ -11,7 +11,7 @@ import struct
 
 IMO_NO = "1114389"
 
-CSV_LOG_PREFIX = "/home/drums/csv/H429_"
+CSV_LOG_PREFIX = "/home/drums/csv/EAD_NK_"
 #CSV_LOG_PREFIX = "H429_"
 
 
