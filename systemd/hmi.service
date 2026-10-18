@@ -1,0 +1,10 @@
+[Unit]
+Description=HMI
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/drums/scripts/hmi.py
+Restart=always
+
+[Install]
+WantedBy=default.target

@@ -1,5 +1,5 @@
 [Unit]
-Description=MODBUS_Emarat_NDY1272
+Description=MODBUS
 
 [Service]
 Type=simple
@@ -7,7 +7,7 @@ User=drums
 Group=drums
 WorkingDirectory=/home/drums
 Environment=HOME=/home/drums
-ExecStart=/usr/bin/python3 -u /home/drums/scripts/emarat_H429_multi_reg_v01_1.py
+ExecStart=/usr/bin/python3 -u /home/drums/scripts/modbus.py
 Restart=always
 RestartSec=5
 NoNewPrivileges=true
