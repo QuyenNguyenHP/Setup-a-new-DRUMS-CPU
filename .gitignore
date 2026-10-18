@@ -1,0 +1,9 @@
+# Python virtual environments and caches
+Modbus_Simulation_Tools/.venv/
+Modbus_Simulation_Tools/__pycache__/
+Modbus_Simulation_Tools/**/__pycache__/
+Modbus_Simulation_Tools/**/*.py[cod]
+
+# Generated packaging output
+Modbus_Simulation_Tools/build/
+Modbus_Simulation_Tools/dist/
